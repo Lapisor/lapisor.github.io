@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ISAT Dialogue Generator</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Dialogue Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <!-- Input fields for customization -->
@@ -17,11 +18,12 @@
     </div>
 
     <!-- Dialogue box display -->
-    <div class="dialogue-box">
+    <div class="dialogue-box" id="dialogue-box">
         <div class="character-name" id="character-name-display">Character Name</div>
         <div class="dialogue-text" id="dialogue-text-display">This is where the dialogue text will go.</div>
     </div>
 
+    <button id="capture-button">Generate Image</button>
     <!-- JavaScript file -->
     <script src="js/script.js"></script>
 </body>
