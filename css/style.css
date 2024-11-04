@@ -16,9 +16,10 @@ body {
 }
 
 .dialogue-box {
-    width: 300px;
+    width: 816px;
+    height: 180px;
     padding: 20px;
-    background-image: url('../images/textbox.png');
+    background-image: url('../assets/textbox/textbox.png');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
