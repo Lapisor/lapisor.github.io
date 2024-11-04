@@ -12,7 +12,8 @@ const dialogueBox = document.getElementById('dialogue-box'); // Ensure this capt
 
 captureButton.addEventListener('click', function() {
     html2canvas(dialogueBox).then(function(canvas) {
-        // Convert the canvas to an image and display or download it
+        // Hide portrait again after capturing if needed
+        portrait.style.display = 'none';
         const imgData = canvas.toDataURL('image/png');
         const link = document.createElement('a');
         link.href = imgData;
@@ -23,6 +24,7 @@ captureButton.addEventListener('click', function() {
 
 const portraitToggle = document.getElementById('portrait-toggle');
 const portrait = document.getElementById('portrait');
+portrait.style.display = 'block'; // or 'inline-block'
 
 // Listen for changes on the portrait toggle checkbox
 portraitToggle.addEventListener('change', function() {
