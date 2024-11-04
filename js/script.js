@@ -7,21 +7,16 @@ dialogueTextInput.addEventListener('input', function() {
     dialogueTextDisplay.textContent = dialogueTextInput.value || 'This is where the dialogue text will go.';
 });
 // Select the dialogue box and capture button
-const dialogueBox = document.getElementById('dialogue-box');
 const captureButton = document.getElementById('capture-button');
+const dialogueBox = document.getElementById('dialogue-box'); // Ensure this captures the right element
 
-// Event listener to capture dialogue box as image
 captureButton.addEventListener('click', function() {
-    html2canvas(dialogueBox).then(canvas => {
-        // Convert the canvas to an image
-        const image = canvas.toDataURL('image/png');
-
-        // Create a link to download the image
+    html2canvas(dialogueBox).then(function(canvas) {
+        // Convert the canvas to an image and display or download it
+        const imgData = canvas.toDataURL('image/png');
         const link = document.createElement('a');
-        link.href = image;
-        link.download = 'dialogue.png';
-        
-        // Automatically click the link to trigger download
+        link.href = imgData;
+        link.download = 'dialogue_image.png';
         link.click();
     });
 });
