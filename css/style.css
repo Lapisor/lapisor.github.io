@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'VCR_OSD_Mono'; /* Name it whatever you like */
+    src: url('../fonts/VCR_OSD_MONO.ttf') format('truetype'); /* Adjust path based on your structure */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'VCR_OSD_Mono', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +41,7 @@ body {
 }
 
 .dialogue-text {
-  font-size: 1em;
+  font-size: 23px;
 }
 
 label {
