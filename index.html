@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Dialogue Generator</title>
+    <title>ISAT Dialogue Generator</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
+    <div class="input-section">
+        <label for="portrait-toggle">Portrait:</label>
+        <input type="checkbox" id="portrait-toggle"> On/Off
+    </div>
     <!-- Input fields for customization -->
     <div class="input-section">
         <label for="dialogue-text-input">Dialogue Text:</label>
         <textarea id="dialogue-text-input" placeholder="Enter dialogue text"></textarea>
     </div>
 
-    <!-- Dialogue box display -->
     <div class="dialogue-box" id="dialogue-box">
+        <img src="./assets/portrait.png" id="portrait" alt="Portrait" class="portrait" style="display: none;">
         <div class="dialogue-text" id="dialogue-text-display">This is where the dialogue text will go.</div>
     </div>
 

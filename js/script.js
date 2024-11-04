@@ -25,3 +25,19 @@ captureButton.addEventListener('click', function() {
         link.click();
     });
 });
+
+const portraitToggle = document.getElementById('portrait-toggle');
+const portrait = document.getElementById('portrait');
+
+// Listen for changes on the portrait toggle checkbox
+portraitToggle.addEventListener('change', function() {
+    if (portraitToggle.checked) {
+        // Show the portrait and adjust text area
+        portrait.style.display = 'block';
+        dialogueTextDisplay.classList.add('portrait-on');
+    } else {
+        // Hide the portrait and revert text area to full width
+        portrait.style.display = 'none';
+        dialogueTextDisplay.classList.remove('portrait-on');
+    }
+});
