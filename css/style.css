@@ -25,3 +25,25 @@ body {
 .dialogue-text {
   font-size: 1em;
 }
+.input-section {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 1em;
+}
